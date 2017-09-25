@@ -1,0 +1,12 @@
+{
+    "name": "codelight/plugin-custom-style-link",
+    "description": "Plugin that gives us button in wysiwyg for creating a link with predefined classes.",
+    "type": "wp-plugin",
+    "authors": [
+        {
+            "name": "Codelight",
+            "email": "team@codelight.eu"
+        }
+    ],
+    "require": {}
+}
