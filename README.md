@@ -1,4 +1,4 @@
-# plugin-custom-style-link
+# Plugin TinyMCE Button Button
 ## Description : <br>
 Plugin That gives you opportunity to create a link in wysiwyg editor, which has custom classes.
 
