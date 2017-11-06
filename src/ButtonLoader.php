@@ -1,7 +1,8 @@
 <?php
+
 namespace TinyMCE_Button;
 
-class Csl_loader
+class ButtonLoader
 {
 
     /**
@@ -14,8 +15,9 @@ class Csl_loader
         if (is_admin()) {
             add_action('init', [&$this, 'setupTinymcePlugin']);
         }
-        $this->cslFilter();
+        $this->ButtonsFilter();
     }
+
     //checking if have right to edit posts and pages
     public function setupTinymcePlugin()
     {
@@ -30,22 +32,26 @@ class Csl_loader
         add_filter('mce_external_plugins', [&$this, 'addTinymcePlugin']);
         add_filter('mce_buttons', [&$this, 'addTinymceToolbarButton']);
     }
+
     //loading JS for button
     public function addTinymcePlugin($pluginArray)
     {
-        $pluginArray['styledLink'] = plugin_dir_url(__DIR__) . 'js/csl_script.js';
+        $pluginArray['styledLink'] = plugin_dir_url(__DIR__) . 'js/tmbb_script.js';
         return $pluginArray;
     }
+
     //adding TinyMCE button
     public function addTinymceToolbarButton($buttons)
     {
         array_push($buttons, 'styledLink');
         return $buttons;
     }
+
     //adding filter for custom button values
-    private function cslFilter () {
-        $loadingCslFilter = new csl_filter();
-        add_filter('tinyMCEButton', [$loadingCslFilter, 'customStyleLinkFilter']);
-        add_action('admin_head', [$loadingCslFilter, 'styleVariables']);
+    private function ButtonsFilter()
+    {
+        $loadingButtonFilter = new ButtonFilter();
+        add_filter('tinyMCEButton', [$loadingButtonFilter, 'ButtonsFilter']);
+        add_action('admin_head', [$loadingButtonFilter, 'styleVariables']);
     }
 }

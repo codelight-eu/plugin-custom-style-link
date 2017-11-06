@@ -4,8 +4,7 @@
  * original source: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader-examples.md#class-example
  */
 
-spl_autoload_register(function ($class)
-{
+spl_autoload_register(function ($class) {
     $prefix = 'TinyMCE_Button\\';
     $baseDir = plugin_dir_path(dirname(__FILE__)) . 'src/';
     $len = strlen($prefix);
