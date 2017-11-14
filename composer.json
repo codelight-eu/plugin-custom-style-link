@@ -1,5 +1,5 @@
 {
-    "name": "codelight/plugin-tinymce-button-button",
+    "name": "codelight/tinymce-button-button",
     "description": "Plugin that gives us button in wysiwyg for creating a link with predefined classes.",
     "type": "wordpress-plugin",
     "authors": [
