@@ -19,4 +19,5 @@ add_filter('tinyMCEButton', function ($buttons) {
     return $buttons;
 });
 ```
+Every element in the `$buttons` array will create a new selectable button style.  
 The `text` parameter is displayed to the user when selecting button styles. The `value` parameter is used as the link class.
