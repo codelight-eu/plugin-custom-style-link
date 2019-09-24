@@ -1,12 +1,11 @@
 {
     "name": "codelight/tinymce-button-button",
-    "description": "Plugin that gives us button in wysiwyg for creating a link with predefined classes.",
+    "description": "Add buttons with specified CSS classes to your WordPress TinyMCE editor",
     "type": "wordpress-plugin",
     "authors": [
         {
             "name": "Codelight",
             "email": "team@codelight.eu"
         }
-    ],
-    "require": {}
+    ]
 }
