@@ -1,4 +1,4 @@
-# TinyMCE Button Button
+# WordPress TinyMCE Button Button
 Add buttons to your TinyMCE editor. The "buttons" are actually just link tags with CSS classes you can define.
 
 ## Installation
