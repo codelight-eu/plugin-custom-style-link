@@ -20,7 +20,7 @@
                         name: 'titleValue',
                         label: 'Title',
                         tooltip: 'Text to display. If you dont want text, leave the placeholder intact',
-                        value: '&nbsp;'
+                        value: ''
                     },
                     {
                         type: 'textbox',
