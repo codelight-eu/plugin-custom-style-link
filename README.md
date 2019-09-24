@@ -1,6 +1,8 @@
 # WordPress TinyMCE Button Button
 Add buttons to your TinyMCE editor. The "buttons" are actually just link tags with CSS classes you can define.
 
+![Screenshot](https://i.imgur.com/nmH5deB.png)
+
 ## Installation
 Via Composer:  
 `composer require codelight/tinymce-button-button`
