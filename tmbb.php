@@ -1,9 +1,11 @@
 <?php
 /*
- * plugin name: TinyMCE Button Button
- * version: 0.9
- * description: Add custom styled links in visual editor.
- * author: Robert
+ * Plugin Name: TinyMCE Button Button
+ * Plugin URI: https://github.com/codelight-eu/tinymce-button-button/
+ * Version: 0.91
+ * Description: Add custom styled links in visual editor.
+ * Author: Codelight
+ * Author URI: https://codelight.eu/
  */
 
 //loading autoloader
